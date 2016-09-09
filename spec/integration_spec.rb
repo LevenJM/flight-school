@@ -46,5 +46,5 @@ RSpec.describe "The FlightSchool application" do
 
     expect(parsed_body["city"]).to eq("San Francisco")
   end
-
+end
 
