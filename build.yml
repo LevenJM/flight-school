@@ -1,0 +1,13 @@
+platform: linux
+
+image_resource:
+  type: docker-image
+  source: 
+    repository: docker-registry.development.gray.net/common/ruby
+    insecure_registries: ['docker-registry.development.gray.net']
+
+inputs:
+- name: flight-school
+
+run:
+  path: ./flight-school/ci/test.sh
